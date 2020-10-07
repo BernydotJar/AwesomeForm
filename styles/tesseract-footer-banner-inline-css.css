@@ -1,0 +1,39 @@
+/* FOOTER */
+#colophon {
+	background-color: #1e73be;
+	color: #ffffff
+}
+
+#colophon .search-field { color: #ffffff; }
+#colophon .search-field.watermark { color: #ccc; }
+
+#colophon h1,
+#colophon h2,
+#colophon h3,
+#colophon h4,
+#colophon h5,
+#colophon h6 { color: #ffffff; }
+
+#colophon a { color: #ffffff; }
+
+#colophon a:hover { color: #d1ecff; }
+
+#horizontal-menu-before,
+#horizontal-menu-after { border-color: rgba(255, 255, 255, 0.25); }
+
+#footer-banner.footbar-active { border-color: rgba(255, 255, 255, 0.15); }
+
+#footer-banner .site-logo img { height: 40px; }
+
+#colophon {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+#horizontal-menu-wrap {
+	width: 60%;
+	}
+
+#footer-banner-right	{
+	width: 40%;
+	}

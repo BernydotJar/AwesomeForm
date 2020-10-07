@@ -1,0 +1,98 @@
+.sidr {
+	background-color: #FFFFFF;
+	}
+
+.sidr .sidr-class-menu-item a,
+.sidr .sidr-class-menu-item span { color: #fff; }
+
+
+.sidr .sidr-class-menu-item ul li a,
+.sidr .sidr-class-menu-item ul li span {
+	color: rgba(255, 15, , 0.8);
+}
+
+.sidr .sidr-class-menu-item a:hover,
+.sidr .sidr-class-menu-item span:hover,
+.sidr .sidr-class-menu-item:first-child a:hover,
+.sidr .sidr-class-menu-item:first-child span:hover { color: #fff; }
+
+.sidr .sidr-class-menu-item ul li a:hover,
+.sidr .sidr-class-menu-item ul li span:hover,
+.sidr .sidr-class-menu-item ul li:first-child a:hover,
+.sidr .sidr-class-menu-item ul li:first-child span:hover { color: rgba(255, 15, 0, 0.8); }
+
+.sidr ul li > a:hover,
+.sidr ul li > span:hover,
+.sidr > div > ul > li:first-child > a:hover,
+.sidr > div > ul > li:first-child > span:hover,
+.sidr ul li ul li:hover > a,
+.sidr ul li ul li:hover > span {
+	background: rgba(0, 0, 0, 0.2);
+
+	}
+
+/* Shadows and Separators */
+
+.sidr ul li > a,
+.sidr ul li > span,
+#sidr-id-header-button-container-inner > * {
+	-webkit-box-shadow: inset 0 -1px rgba( 0 ,0 ,0 , 0.2);
+	-moz-box-shadow: inset 0 -1px rgba( 0 ,0 ,0 , 0.2);
+	box-shadow: inset 0 -1px rgba( 0 ,0 ,0 , 0.2);
+}
+
+.sidr > div > ul > li:last-of-type > a,
+.sidr > div > ul > li:last-of-type > span,
+#sidr-id-header-button-container-inner > *:last-of-type {
+	box-shadow: none;
+	}
+
+.sidr ul.sidr-class-hr-social li a,
+.sidr ul.sidr-class-hr-social li a:first-child {
+	-webkit-box-shadow: 0 1px 0 0px rgba( 0 ,0 ,0, .25);
+	-moz-box-shadow: 0 1px 0 0px rgba( 0 ,0 ,0, .25);
+	box-shadow: 0 1px 0 0px rgba( 0 ,0 ,0, .25);
+}
+
+/* Header Right side content */
+
+.sidr-class-search-field,
+.sidr-class-search-form input[type='search'] {
+	background: rgba(255, 255, 255, 0.15);
+	color: ;
+}
+
+.sidr-class-hr-social {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+#sidr-id-header-button-container-inner,
+#sidr-id-header-button-container-inner > h1,
+#sidr-id-header-button-container-inner > h2,
+#sidr-id-header-button-container-inner > h3,
+#sidr-id-header-button-container-inner > h4,
+#sidr-id-header-button-container-inner > h5,
+#sidr-id-header-button-container-inner > h6 {
+	background: rgba(0, 0, 0, 0.2);
+	color: ;
+}
+
+#sidr-id-header-button-container-inner a,
+#sidr-id-header-button-container-inner button {
+	color: ;
+}
+
+#sidr-id-header-button-container-inner a:hover,
+#sidr-id-header-button-container-inner button:hover {
+	color: ;
+}
+
+.sidr ul li > a,
+.sidr ul li > span,
+#sidr-id-header-button-container-inner > *,
+#sidr-id-header-button-container-inner button {
+	-webkit-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: inset 0 -1px rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 -1px rgba(255, 255, 255, 0.1);
+}
+
