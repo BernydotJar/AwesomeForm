@@ -387,7 +387,7 @@ if ($.trim(valueToCompare) != $.trim(SecondvalueToCompare)  ){
 		
   if(sessionStorage.getItem('myUserEntity') == null){
     //Redirect to login page, no user entity available in sessionStorage
-    location.href='https://cabifyactivaciones.azurewebsites.net';
+    location.href='https://awesomewebform.azurewebsites.net';
   } else {
     //User already logged in
     var userEntity = {};
@@ -439,11 +439,11 @@ if ($.trim(valueToCompare) != $.trim(SecondvalueToCompare)  ){
 	var site = ""
 			   // https://cabify.sharepoint.com/:f:/s/Cabify-Activaciones/  
 	var img = $(this).children('#imagen3');
-	//https://cabifyactivaciones.azurewebsites.net' 
+	//https://awesomewebform.azurewebsites.net' 
 		  var ajax = $.ajax({
 			type: "POST",
 			dataType: 'json',	
-			url: "https://cabifyactivaciones.azurewebsites.net/Obtener_registros.php",
+			url: "https://awesomewebform.azurewebsites.net/Obtener_registros.php",
 			context: this,
 			data: ({jsonObj:tdata }),
 					  //success: function(response) {
@@ -551,7 +551,7 @@ var processForm =  "true"
 	 
 			type: "post",
 			dataType: 'json',	
-			url: "https://cabifyactivaciones.azurewebsites.net/registro.php",
+			url: "https://awesomewebform.azurewebsites.net/registro.php",
 			data : ({jsonObj:formData }),
 		//contentType: 'application/json;charset=UTF-8',
 	
@@ -609,7 +609,7 @@ var processForm =  "true"
 						type: "post",
 						 global: false,
 						dataType: 'json',	
-						 url: "https://cabifyactivaciones.azurewebsites.net/reject.php",
+						 url: "https://awesomewebform.azurewebsites.net/reject.php",
 						 cache: false,
 						 data : ({jsonObj:rejectdata}),
 						success: function (result) {
@@ -647,7 +647,7 @@ var processForm =  "true"
 		var newWindow = window.open('https://mail.google.com/mail/?logout&hl=fr','Disconnect from Google','width=100,height=50,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,top=200,left=200');
 setTimeout(function(){
     if (newWindow) newWindow.close();
-    window.location="https://cabifyactivaciones.azurewebsites.net";
+    window.location="https://awesomewebform.azurewebsites.net";
 	sessionStorage.clear();
 },3000);	
 	  }
