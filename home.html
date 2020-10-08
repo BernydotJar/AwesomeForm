@@ -273,113 +273,6 @@
 <script type="text/javascript" src="js/moment.js"></script>
 <script type="text/javascript" src="https://www.datejs.com/build/date.js"></script>
 
-<!--- Validaciones Autmaticas Si el check box es true/false  --->
-<script>
-	
-$("#cbox2").change(function () {
-    var value = $( "#cbox2" ).is(":checked");
-	if (value)  {
-	  $("#Autorizado_CA").val(" ");
-	//Autorizado///
-	
- 
-var  valueToCompare       = $('#NomApell_LC').val(); 
-var  SecondvalueToCompare = $("#Titular_CA").val();	
-	if (valueToCompare == '') {
-         $("#Autorizado_Validacion").val("NO");
-         $("#Autorizado_Validacion").css('color', 'red');
-}else{
-if ($.trim(valueToCompare) != $.trim(SecondvalueToCompare)  ){
-    //alert(SecondvalueToCompare + " Patentes -- "  + valueToCompare)  
-		 $("#Autorizado_Validacion").val("NO");
-         $("#Autorizado_Validacion").css('color', 'Red');
-}else{	
-   $("#Autorizado_Validacion").val("SI");  
-   $("#Autorizado_Validacion").css('color', 'Green');
-		}}
-}else{	
-$("#Autorizado_Validacion").val("NO");  
-$("#Autorizado_Validacion").css('color', 'red');
-$("#Autorizado_CA").val("");
-}}) 
-</script>
-
-<!--- Validaciones Autmaticas Si el check box es true/false  --->
-<script>
-	
-	$("#cbox1").change(function () {
-		var value = $( "#cbox1" ).is(":checked");
-		if (value)  {
-		  $("#Cedula_Vigente").val("SI");
-		  $("#Cedula_Vigente").css('color', 'Green');
-		  $("#VigCed_CA").val(" ");
-	}else{	
-	$("#Cedula_Vigente").val("NO");  
-	$("#Cedula_Vigente").css('color', 'red');
-	$("#VigCed_CA").val("");
-	}}) 
-	</script>
-
-<!--- esonde las validaciones automaticas al llegar al colophon --->
-<script>
-
-	$(document).scroll(function() {
-		checkOffset();
-	});
-	</script>
-	<script>
-	function checkOffset() {
-		if($('#validation-float').offset().top + $('#validation-float').height() 
-											   >= $('#colophon').offset().top - 5)
-			$('#validation-float').css('position', 'absolute');
-		if($(document).scrollTop() + window.innerHeight < $('#colophon').offset().top)
-			$('#validation-float').css('position', 'fixed'); // restore when you scroll up
-	}
-	</script>
-<!--- Validaciones Autmaticas --->
-<script>
-function DateFunction(valueToCompare) {
-var dateToFormat = $.trim(valueToCompare);	
-	var arrayDeCadenas = dateToFormat.split("/");
-	var NowMoment = moment( arrayDeCadenas[1] + "/"+ arrayDeCadenas[0] + "/" + arrayDeCadenas[2] );
-	formattedDate = NowMoment
-  return formattedDate;
-}
-</script>
-
-<script>
-
-
-
-$(document).ready(function() {
-
-	$('#Titular_CA')
-    .attr('placeholder', 'Titular')
-	.on("input", function(){
-	var $this = $(this);
-	var valueToCompare = $this.val(); 
-
-
-	//var  valueToCompare       = $('#NomApell_LC').val(); 
-var  SecondvalueToCompare = $("#NomApell_LC").val();	
-	if (valueToCompare == '') {
-         $("#Autorizado_Validacion").val("NO");
-         $("#Autorizado_Validacion").css('color', 'red');
-}else{
-if ($.trim(valueToCompare) != $.trim(SecondvalueToCompare)  ){
-    //alert(SecondvalueToCompare + " Patentes -- "  + valueToCompare)  
-		 $("#Autorizado_Validacion").val("NO");
-         $("#Autorizado_Validacion").css('color', 'Red');
-}else{	
-   $("#Autorizado_Validacion").val("SI");  
-   $("#Autorizado_Validacion").css('color', 'Green');
-		}}
-	})
-/////////
-
-
-
-</script>
 
 
 <script>
@@ -390,7 +283,7 @@ if ($.trim(valueToCompare) != $.trim(SecondvalueToCompare)  ){
     location.href='https://awesomewebform.azurewebsites.net';
   } else {
     //User already logged in
-    var userEntity = {};
+    var userEntity = {};s
 	$( "#dialogoRechazo" ).dialog({ autoOpen: false });
 	$( "#dialogUpdateOk" ).dialog({ autoOpen: false });
 	$( "#dialogError" ).dialog({ autoOpen: false });
