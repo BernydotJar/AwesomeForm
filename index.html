@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Easy Login!</title>
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="css/styleLogin.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="google-signin-client_id" content="276998669167-4iogcsq3tqm744aco8ji6705m9jnrurl.apps.googleusercontent.com">
+	
+</head>
+<body>
+
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/new_campaing.png">
+			
+		</div>
+		<div class="login-content">
+			
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				<!-- <div class="g-signin2" data-wid	th="300" data-height="50" data-longtitle="true"></div> -->
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>User</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+
+	<script>
+function onSignIn(googleUser) 
+{
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); 
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+  
+  var myUserEntity = {};
+  //myUserEntity.Id = profile.getId();
+  myUserEntity.Name = profile.getName();
+  
+  //Store the entity object in sessionStorage where it will be accessible from all pages of your site.
+  sessionStorage.setItem('myUserEntity',JSON.stringify(myUserEntity));
+  //location.href='http://localhost/Form_Template_V1/home.html';
+  location.href='https://awesomewebform.azurewebsites.net/home.html';
+  //alert(profile.getName());   
+}
+
+function checkIfLoggedIn()
+{
+  if(sessionStorage.getItem('myUserEntity') == null){
+    //Redirect to login page, no user entity available in sessionStorage
+	//location.href='http://localhost/Form_Template_V1/index.html';
+    location.href='https://awesomewebform.azurewebsites.net/index.html';
+  } else {
+    //User already logged in
+    var userEntity = {};
+    userEntity = JSON.parse(sessionStorage.getItem('myUserEntity'));
+    
+  }
+}
+
+function logout()
+{
+  //Don't forget to clear sessionStorage when user logs out
+  sessionStorage.clear();
+}
+
+
+</script>	
+
+
+</body>
+</html>
