@@ -312,7 +312,7 @@
 		var newWindow = window.open('https://mail.google.com/mail/?logout&hl=fr','Disconnect from Google','width=100,height=50,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,top=200,left=200');
 setTimeout(function(){
     if (newWindow) newWindow.close();
-    window.location="https://awesomewebform.azurewebsites.net";
+    window.location="https://bernydotjar.github.io/AwesomeForm";
 	sessionStorage.clear();
 },3000);	
 	  }
@@ -369,13 +369,7 @@ setTimeout(function(){
 		
 	
 		<!--mensaje de actualizacion de datos-->
-		<div id="dialogUpdateOk" title="Actualización Exítosa">
-		  <p>La base de datos ha sido actualizada con éxito</p>
-		</div>
-		<!--mensaje de error de actualizacion campos no vacios-->
-		<div id="dialogError" title="Dialog">
-		  <p>Por favor revisa todos los campos</p>
-		</div>
+
 		<div id="dialogoRechazo" title="Rechazo"><select id="dropdown_rechazo" name="dropdown_rechazo"  style="z-index:10000; width: 250px;" ><option value="" selected="selected">Seleccione un motivo de rechazo</option><option value="Vehicle Year">Año del vehículo</option><option value="Vehicle Model">Tipo de vehículo</option><option value="Vehicle Model">Taxi</option><option value="Age">La edad del Driver es menor a los 21 años</option><option value="Unsuitable Documents">Licencia no admitida</option><option value="Unsuitable Documents">Cedula no admitida</option><option value="Duplicate Record">Registro Duplicado</option></div>
 		<!-- Lightbox Plus Colorbox v2.7/1.5.9 - 2013.01.24 - Message: 1-->
    <script type="text/javascript">
