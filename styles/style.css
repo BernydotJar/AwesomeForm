@@ -2091,13 +2091,20 @@ figure {
 .single #primary { width: 100%; }
 
 .page-template-page-rightsidebar #primary {
+    float: right;
+    }
+.page-template-page-leftsidebar #primary {
     float: left;
     }
-
 .page-template-page-rightsidebar #secondary {
     float: right;
     padding: 0 0 0 60px;
     }
+    .page-template-page-leftsidebar #secondary {
+    float: left;
+    padding: 0 0 0 60px;
+    }
+
 
 .home .content-area {
     width: 100%;
