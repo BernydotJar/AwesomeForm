@@ -2463,6 +2463,9 @@ article.comment-body{
 -------------------------------------------------------------- */
 
 @media screen and (max-width: 980px) {
+    #right2 {
+        display: none;
+        }
 
     #sidebar-footer,
     #content {
@@ -2483,6 +2486,8 @@ article.comment-body{
 
 @media screen and (max-width: 768px) {
 
+
+        
     #primary,
     #secondary {
         width: 100%;
