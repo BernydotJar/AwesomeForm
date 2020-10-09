@@ -71,7 +71,7 @@ option{
 
 .right {
    right: 0px;
-      position: fixed;
+    
           float: right; 
           display: inline;
   }
