@@ -2463,7 +2463,7 @@ article.comment-body{
 -------------------------------------------------------------- */
 
 @media screen and (max-width: 980px) {
-    #right2 {
+    .right2 {
         display: none;
         }
 
