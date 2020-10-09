@@ -164,8 +164,8 @@
 		</select>
 				</td>	
 				</table>   
-
-	<div class="split right">
+</div>
+	<div class="loading">
 	<table id = "tableCA" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>		
 		<th rowspan=14 class="vertical-th"> <span>Physitian or supplier information</span></th>	        
 				<tr height=10px  >
@@ -219,7 +219,7 @@
 		</select>
 </td>	  
 </table> 
-</div>
+
 
 </div>	
 </div> 
@@ -261,7 +261,20 @@
 <script type="text/javascript" src="js/moment.js"></script>
 <script type="text/javascript" src="https://www.datejs.com/build/date.js"></script>
 
-
+<script>
+	$(document).scroll(function () {
+		checkOffset();
+	});
+</script>
+<script>
+	function checkOffset() {
+		if ($('#validation-float').offset().top + $('#validation-float').height()
+			>= $('#colophon').offset().top - 75)
+			$('#validation-float').css('position', 'absolute');
+		if ($(document).scrollTop() + window.innerHeight < $('#colophon').offset().top)
+			$('#validation-float').css('position', 'fixed'); // restore when you scroll up
+	}
+</script>
 
 <script>
 	$(document).ready(function(){
