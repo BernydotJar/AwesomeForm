@@ -58,42 +58,32 @@ option{
 }
 
 
-.loading{
-    width: 60%;
-    margin: 0 auto;
-    padding: 3em;
-    text-align: center;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-}
 
 .split {
     height: 0%;
-    width: 25%;
+    width: 50%;
     z-index: 0;
     top: 5;
-    /* padding-top: 20px; */
+   padding-top: 20px;
   }
 
 .right {
    right: 250px;
       position: fixed;
           float: right; 
-          display: flex;
+          display: inline;
   }
 .left {
     left: 129px;
       float: left;
-      
+       display: inline|;
   }
   
 .right2 {
     z-index: 1;
     top: 5;
     padding-top: 45px;
-    width: 50%; 
+    width: 30%; 
     right: 0px;
     position: fixed;
     float: right;		
