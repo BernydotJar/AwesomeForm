@@ -1439,7 +1439,7 @@ table {
 
 td,
 th {
-    padding: 2px 2px;
+    padding: 2px 15px;
     text-align: left;
     border: #e435e617 solid 0px;
 }
