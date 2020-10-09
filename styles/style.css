@@ -64,7 +64,7 @@ option{
     width: 50%;
     z-index: 0;
     top: 5;
-   padding-top: 20px;
+    /* padding-top: 20px; */
   }
 
 .right {
