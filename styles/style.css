@@ -63,9 +63,8 @@ option{
     height: 100%;
     width: 50%;
     z-index: 1;
-    top: 20;
+    top: 0;
     overflow-x: hidden;
-      position: fixed;
     padding-top: 20px;    
     /* padding-top: 20px; */
   }
@@ -73,12 +72,12 @@ option{
 .right {
    right: 0px;
     
-
+          float: right; 
           display: inline;
   }
 .left {
     left: 0px;
-
+      float: left;
        display: inline|;
   }
   
