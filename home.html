@@ -164,6 +164,65 @@
 		</select>
 				</td>	
 				</table>   
+				<table id="tableCA" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>
+					<th rowspan=14 class="vertical-th"> <span>Physitian or supplier information</span></th>
+					<tr height=10px>
+						<td><label>Date of the current illnes</label></td>
+						<td><input class="required" type="text" id="Plate_CA" name="Plate_CA"
+								placeholder="Date of the current illnes" /></td>
+					</tr>
+					<tr height=10px>
+						<td height=10px width=auto <label>Name of referring provider</label></td>
+						<td><input class="required" type="text" id="Marca_CA" name="Marca_CA"
+								placeholder="Name of referring provider" /></td>
+					</tr>
+					<tr height=10px>
+					<tr height=10px>
+						<td height=10px width=auto <label>Diagnosis or nature of illness</label></td>
+						<td><input class="required" type="text" id="ModVeh_CA" name="ModVeh_CA"
+								placeholder="Diagnosis or nature of illness" /></td>
+					</tr>
+					<td height=10px width=auto <label>Date of services</label></td>
+				
+					<!-- <select id="dropdown_Tipo" name="dropdown_Tipo_list" form="ActivacionesForm"></select> -->
+					<td><input class="required" type="text" id="Tipo_CA" name="Tipo_CA" placeholder="Date of services" /></td>
+					</td>
+					<!-- <td><input class = "required"  type="text" id="Tipo_CA" name="Tipo_CA" placeholder="Tipo de Vehículo" /></td> -->
+					</tr>
+					<tr height=10px>
+						<td height=10px width=auto <label>Use</label></td>
+						<td>
+							<select id="dropdown_Uso" name="dropdown_Uso_list" form="ActivacionesForm"></select>
+						</td>
+						<!-- <td><input class = "required" type="text" id="Uso_CA" name="Uso_CA" placeholder="Uso"  /></td> -->
+					</tr>
+					<tr height=10px>
+						<td height=10px width=auto <label>Validity</label></td>
+						<td><input class="required" type="text" id="VigCed_CA" name="VigCed_CA" placeholder="Validity" /></td>
+						<td style="border: #e635d4ad solid 1px; "><label><input type="checkbox" id="cbox1"
+									value="checkbox_sinVencimiento" style="vertical-align: left;"> Without caducity</label> </td>
+					</tr>
+					<tr>
+						<td height=10px width=auto <label>Federal Tax Id Number</label></td>
+						<td><input class="required" type="text" id="Titular_CA" name="Titular_CA" placeholder="Federal Tax Id Number" />
+						</td>
+					</tr>
+					<tr height=10px>
+						<td height=10px width=auto <label>Autorized</label></td>
+						<td><input type="text" class="required" id="Autorizado_CA" name="Autorizado_CA" placeholder="Autorized" /></td>
+						<td style="border: #e635d4ad solid 1px; " <label><input type="checkbox" id="cbox2"
+								value="checkbox_sinAutorizado" style="vertical-align: left"> Not Applicable</label> </td>
+					</tr>
+				
+					<td><label>Action</label></td>
+					<td>
+						<select id="dropdown_CA" name="dropdown_CA_list" form="ActivacionesForm">
+							<option value="" selected="selected">Select an option</option>
+							<option value="Activar">Documento OK</option>
+							<option value="ReCollect">Re-collect File</option>
+						</select>
+					</td>
+				</table>
 </div>
 	<div class=".content-area.left">
 	<table id = "tableCA" border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse'>		
