@@ -92,21 +92,14 @@ option{
 .right2 {
     z-index: 1;
     top: 5;
-    padding-top: 20px;
-    width: 20%; 
-    right: 25px;
+    padding-top: 45px;
+    width: 50%; 
+    right: 0px;
     position: fixed;
     float: right;		
   }
 
-  .right3 {
-    padding-top: 10px;
-    right: 350px;
-    position: fixed;
-    float: right; 
-    display: flex;
-   }
-  
+
 
 /* =01. normalize.css v3.0.1
 -------------------------------------------------------------- */
@@ -1490,7 +1483,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 .site-header {
-    width: 80%;
+    width: 100%;
     }
 
 /* =12. Layout
