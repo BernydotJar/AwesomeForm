@@ -328,7 +328,7 @@
 <script>
 	function checkOffset() {
 		if($('#validation-float').offset().top + $('#validation-float').height() 
-											   >= $('#colophon').offset().top - 275)
+											   >= $('#colophon').offset().top - 75)
 			$('#validation-float').css('position', 'absolute');
 		if($(document).scrollTop() + window.innerHeight < $('#colophon').offset().top)
 			$('#validation-float').css('position', 'fixed'); // restore when you scroll up
